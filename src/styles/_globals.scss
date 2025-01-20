@@ -1,0 +1,40 @@
+@import "variables";
+@font-face {
+  font-family: "Gallient";
+  src: url("/assets/fonts/Gallient.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: $reset-margin;
+  padding: $reset-padding;
+  text-decoration: none;
+  //cursor: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $color-background;
+}
+
+h1 {
+  font-family: $font-title;
+  color: $color-text;
+  margin: $reset-margin;
+  padding: $reset-padding;
+}
+
+p {
+  font-family: $font-text;
+  color: $color-text;
+  margin: $reset-margin;
+  padding: $reset-padding;
+}
+
+a {
+  font-family: $font-text;
+  color: $color-link;
+  margin: $reset-margin;
+  padding: $reset-padding;
+}

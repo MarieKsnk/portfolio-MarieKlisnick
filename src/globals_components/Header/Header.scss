@@ -1,0 +1,53 @@
+@import "../../styles/variables";
+@import "../../styles/globals";
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  width: 100%;
+  padding: 50px 30px;
+
+  // Navigation (gauche et droite)
+  nav {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin: $reset-margin;
+      padding: $reset-padding;
+
+      li {
+        position: relative;
+
+        a {
+          font-family: $font-text;
+          color: $color-link;
+          font-size: 18px;
+          font-weight: 600;
+          padding: 0 10px;
+          text-decoration: none;
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+  // Titre Marie Klisnick
+  .site-title {
+    font-family: $font-title;
+    color: $color-red;
+    font-size: clamp(2.5rem, 4vw + 0.5rem, 3.5rem);
+    font-weight: normal;
+    text-decoration: none;
+    position: relative;
+    text-align: center;
+    width: 45%;
+  }
+}
